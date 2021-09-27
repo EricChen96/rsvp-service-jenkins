@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
               bat '''
-                ./mvnw -DskipTests clean compile
+                 ./mvnw -DskipTests clean compile
               '''
             }
         }
@@ -14,7 +14,7 @@ pipeline {
         stage('test') {
             steps {
               bat '''
-                ./mvnw test
+                 ./mvnw test
               '''
             }
         }
